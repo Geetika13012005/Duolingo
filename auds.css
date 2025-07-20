@@ -1,0 +1,135 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navigation */
+header {
+  background-color: #58cc02;
+  padding: 15px 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Form Wrapper */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+/* Auth Form */
+.auth-form {
+  background: white;
+  padding: 40px 35px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  animation: slideUp 0.5s ease;
+}
+.auth-form h2 {
+  color: #58cc02;
+  margin-bottom: 10px;
+}
+.auth-form p {
+  margin-bottom: 25px;
+  color: #666;
+}
+
+.auth-form label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+.auth-form input:focus {
+  border-color: #58cc02;
+  outline: none;
+  box-shadow: 0 0 5px #c5f59f;
+}
+
+.auth-form button {
+  width: 100%;
+  background-color: #58cc02;
+  color: white;
+  padding: 12px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.auth-form button:hover {
+  background-color: #4ab102;
+}
+
+.form-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+.form-footer a {
+  color: #58cc02;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Animations */
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
