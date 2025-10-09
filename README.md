@@ -13,6 +13,7 @@ Welcome to the **Duolingo Clone** – a full-stack language learning platform in
 - 🛠️ **Backend API** – RESTful API built with Flask/Node.js (customizable based on your stack).
 - 🧪 **ML Backend** – Model trained to evaluate sentence correctness, provide grammar feedback, or suggest corrections.
 
+  
 
 ## 🧰 Tech Stack
 
